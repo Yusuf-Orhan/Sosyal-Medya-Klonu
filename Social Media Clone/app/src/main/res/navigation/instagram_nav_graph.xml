@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/instagram_nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="yusuf.orhan.instagram.View.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_addPostFragment"
+            app:destination="@id/addPostFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_details_Fragment"
+            app:destination="@id/details_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="yusuf.orhan.instagram.View.MessageFragment"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" >
+        <action
+            android:id="@+id/messageFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="yusuf.orhan.instagram.View.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPostFragment"
+        android:name="yusuf.orhan.instagram.View.AddPostFragment"
+        android:label="fragment_add_post"
+        tools:layout="@layout/fragment_add_post" >
+        <action
+            android:id="@+id/action_addPostFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/details_Fragment"
+        android:name="yusuf.orhan.instagram.View.Details_Fragment"
+        android:label="fragment_details_"
+        tools:layout="@layout/fragment_details_" >
+        <action
+            android:id="@+id/action_details_Fragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:popUpTo="@id/details_Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
