@@ -17,4 +17,4 @@
 
 ![Screenshots4](https://media.discordapp.net/attachments/1085555582305587201/1106217356650360963/1683813154295.jpg?width=295&height=655)
  
-![Screenshots5](https://cdn.discordapp.com/attachments/1085555582305587201/1106217355777945610/1683813154269.jpg?width=295&heiht=655)
+![Screenshots5](https://cdn.discordapp.com/attachments/1085555582305587201/1106217355777945610/1683813154269.jpg?width=295&height=655)
